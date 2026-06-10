@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Alaa AbdelMoniem Mohammed</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: "Computer Modern", "Latin Modern", "CMU Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    background: #fff;
+    color: #000;
+    line-height: 1.45;
+  }
+
+  .page {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 40px 50px;
+    background: #fff;
+  }
+
+  /* ── Header ── */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+
+  .header-left h1 {
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+  }
+
+  .header-left .role {
+    font-size: 10.5pt;
+    margin-top: 3px;
+    color: #222;
+  }
+
+  .header-right {
+    text-align: right;
+    font-size: 9.5pt;
+    line-height: 1.7;
+    color: #111;
+  }
+
+  .header-right a {
+    color: #111;
+    text-decoration: none;
+  }
+
+  /* ── Divider ── */
+  .divider {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 8px 0 10px;
+  }
+
+  /* ── Section heading ── */
+  .section-title {
+    font-variant: small-caps;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+    text-transform: lowercase;
+    font-variant: small-caps;
+  }
+
+  /* ── Education ── */
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .edu-row .school {
+    font-weight: bold;
+    font-size: 10.5pt;
+  }
+
+  .edu-row .gpa {
+    font-size: 10pt;
+  }
+
+  /* ── Projects ── */
+  .project { margin-bottom: 10px; }
+
+  .project-title-line {
+    font-weight: bold;
+    font-size: 10.5pt;
+    margin-bottom: 1px;
+  }
+
+  .project-title-line::before {
+    content: "•";
+    margin-right: 4px;
+  }
+
+  .project-desc {
+    font-style: italic;
+    font-size: 10pt;
+    color: #111;
+    margin-bottom: 3px;
+    margin-left: 0;
+  }
+
+  .project-bullets {
+    list-style: none;
+    padding-left: 18px;
+  }
+
+  .project-bullets li {
+    font-size: 10pt;
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 2px;
+  }
+
+  .project-bullets li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+  }
+
+  /* ── Experience ── */
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .exp-org {
+    font-weight: bold;
+    font-size: 10.5pt;
+  }
+
+  .exp-org::before {
+    content: "•";
+    margin-right: 4px;
+  }
+
+  .exp-location {
+    font-size: 10pt;
+    font-style: italic;
+  }
+
+  .exp-role-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 3px;
+  }
+
+  .exp-role {
+    font-style: italic;
+    font-size: 10pt;
+  }
+
+  .exp-date {
+    font-size: 10pt;
+  }
+
+  .exp-bullets {
+    list-style: none;
+    padding-left: 18px;
+  }
+
+  .exp-bullets li {
+    font-size: 10pt;
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 2px;
+  }
+
+  .exp-bullets li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+  }
+
+  /* ── Skills ── */
+  .skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+    margin-top: 4px;
+  }
+
+  .skills-table tr td {
+    padding: 1.5px 0;
+    vertical-align: top;
+  }
+
+  .skills-table tr td:first-child {
+    font-weight: bold;
+    white-space: nowrap;
+    padding-right: 6px;
+    width: 160px;
+  }
+
+  @media print {
+    .page { margin: 0; padding: 30px 40px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Alaa AbdelMoniem Mohammed</h1>
+      <div class="role">Flutter Developer</div>
+    </div>
+    <div class="header-right">
+      &#9742; +20-01225985702<br>
+      &#9993; alaaabdelmoniem5@gmail.com<br>
+      &#9632; <a href="#">GitHub Profile</a><br>
+      &#9632; <a href="#">LinkedIn Profile</a>
+    </div>
+  </div>
+
+  <hr class="divider"/>
+
+  <!-- Education -->
+  <div class="section-title">Education</div>
+  <div class="edu-row">
+    <span class="school">&#8226;Student in Faculty of Computers and Information</span>
+    <span class="gpa">GPA: 3.6</span>
+  </div>
+
+  <!-- Personal Projects -->
+  <div class="section-title">Personal Projects</div>
+
+  <div class="project">
+    <div class="project-title-line">News App</div>
+    <div class="project-desc">Developed a mobile news application that displays the latest articles from various sources using an external API.</div>
+    <ul class="project-bullets">
+      <li>Fetched and displayed real-time news data by integrating an external API.</li>
+      <li>Used the Dio package for efficient HTTP requests and JSON data handling.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="project-title-line">Chat App</div>
+    <div class="project-desc">Developed a real-time chat application that enables users to send and receive messages instantly.</div>
+    <ul class="project-bullets">
+      <li>Used Firebase Authentication to facilitate secure user authentication and login.</li>
+      <li>Utilized Cloud Firestore to store and synchronize chat data in real time.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="project-title-line">Books App</div>
+    <div class="project-desc">Developed a comprehensive book discovery application that allows users to search, preview, and manage a digital library using the Google Books API.</div>
+    <ul class="project-bullets">
+      <li>Architected the application using the MVVM pattern to ensure a clean separation of concerns, improving code testability and maintainability.</li>
+      <li>Integrated Google Books API to fetch and display detailed book metadata, including descriptions, ratings, and author information.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="project-title-line">Notes App</div>
+    <div class="project-desc">Developed a mobile notes application that allows users to create, edit, and delete notes with local data storage.</div>
+    <ul class="project-bullets">
+      <li>Implemented local data persistence using the Hive package for fast and secure offline storage.</li>
+      <li>Designed a simple and intuitive interface for efficient note management.</li>
+    </ul>
+  </div>
+
+  <!-- Experience -->
+  <div class="section-title">Experience</div>
+
+  <div class="exp-header">
+    <span class="exp-org">ICPC Zagazig Community Internship</span>
+    <span class="exp-location">Online</span>
+  </div>
+  <div class="exp-role-date">
+    <span class="exp-role">Problem Solving Skills</span>
+    <span class="exp-date">Oct 2024 – Apr 2025</span>
+  </div>
+  <ul class="exp-bullets">
+    <li>Completed an intensive training focused on enhancing problem-solving and programming fundamentals.</li>
+    <li>Gained understanding of key <b>data structure</b> concepts and their practical use.</li>
+    <li>Solved numerous competitive programming problems on <b>Codeforces</b>.</li>
+    <li>Developed the ability to perform effectively under time pressure while solving complex problems.</li>
+    <li>Gained knowledge of basic programming concepts and Some key <b>algorithms</b>.</li>
+  </ul>
+
+  <!-- Technical Skills -->
+  <div class="section-title">Technical Skills and Interests</div>
+  <table class="skills-table">
+    <tr>
+      <td><b>Languages</b>:</td>
+      <td>C++, Python, dart</td>
+    </tr>
+    <tr>
+      <td><b>Frameworks</b>:</td>
+      <td>Flutter</td>
+    </tr>
+    <tr>
+      <td><b>Cloud/Databases</b>:</td>
+      <td>Firebase, supabase</td>
+    </tr>
+    <tr>
+      <td><b>Relevant Coursework</b>:</td>
+      <td>Object Oriented, Bloc and MVVM Pattern</td>
+    </tr>
+    <tr>
+      <td><b>Soft Skills</b>:</td>
+      <td>Problem Solving, Self-learning, Adaptability</td>
+    </tr>
+  </table>
+
+</div>
+</body>
+</html>
